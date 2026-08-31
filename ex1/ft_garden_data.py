@@ -12,7 +12,8 @@ class Plant:
     # this is how you can turn a Plant into a str
     def __repr__(self) -> str:
         return (
-                f"{self.__name}: {self.__age} days old, {self.__height}cm tall"
+                f"{self.__name}: {round(self.__height, 3)}cm tall, "
+                f"{self.__age} days old"
         )
 
     def __str__(self) -> str:
